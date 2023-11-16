@@ -28,5 +28,17 @@ namespace TPLABO2
             Frm_Diferencia_Precios frm_Diferencia = new Frm_Diferencia_Precios();
             frm_Diferencia.ShowDialog();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_Ingresos_Empleados frm  = new Frm_Ingresos_Empleados();
+            frm.ShowDialog();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Frm_Movimientos frm_Movimientos = new Frm_Movimientos();
+            frm_Movimientos.ShowDialog();
+        }
     }
 }

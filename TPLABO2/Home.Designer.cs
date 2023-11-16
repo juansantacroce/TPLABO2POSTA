@@ -34,6 +34,8 @@
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.ventasSustancialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diferenciaDePreciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -71,7 +73,9 @@
             this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ventasSustancialesToolStripMenuItem,
-            this.diferenciaDePreciosToolStripMenuItem});
+            this.diferenciaDePreciosToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2});
             this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
@@ -81,16 +85,30 @@
             // ventasSustancialesToolStripMenuItem
             // 
             this.ventasSustancialesToolStripMenuItem.Name = "ventasSustancialesToolStripMenuItem";
-            this.ventasSustancialesToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.ventasSustancialesToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.ventasSustancialesToolStripMenuItem.Text = "Ventas Sustanciales";
             this.ventasSustancialesToolStripMenuItem.Click += new System.EventHandler(this.ventasSustancialesToolStripMenuItem_Click);
             // 
             // diferenciaDePreciosToolStripMenuItem
             // 
             this.diferenciaDePreciosToolStripMenuItem.Name = "diferenciaDePreciosToolStripMenuItem";
-            this.diferenciaDePreciosToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.diferenciaDePreciosToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.diferenciaDePreciosToolStripMenuItem.Text = "Diferencia de Precios";
             this.diferenciaDePreciosToolStripMenuItem.Click += new System.EventHandler(this.diferenciaDePreciosToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(205, 22);
+            this.toolStripMenuItem1.Text = "Ingreso de Empleados";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(205, 22);
+            this.toolStripMenuItem2.Text = "Informe de Movimientos";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // Home
             // 
@@ -117,6 +135,8 @@
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripMenuItem ventasSustancialesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diferenciaDePreciosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }
 

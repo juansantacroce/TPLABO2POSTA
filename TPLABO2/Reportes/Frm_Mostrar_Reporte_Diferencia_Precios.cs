@@ -22,7 +22,6 @@ namespace TPLABO2.Reportes
         {
             // TODO: esta línea de código carga datos en la tabla 'dataSetGeneral.SP_MOSTRAR_PRECIO_VENTA' Puede moverla o quitarla según sea necesario.
             this.sP_MOSTRAR_PRECIO_VENTATableAdapter.Fill(this.dataSetGeneral.SP_MOSTRAR_PRECIO_VENTA,año);
-
             this.reportViewer1.RefreshReport();
         }
     }

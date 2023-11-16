@@ -40,5 +40,17 @@ namespace TPLABO2
             Frm_Movimientos frm_Movimientos = new Frm_Movimientos();
             frm_Movimientos.ShowDialog();
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Frm_productos_mayor_cant_comparado_rubro frmK = new Frm_productos_mayor_cant_comparado_rubro();
+            frmK.ShowDialog();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Frm_Ventas_sustanciales_por_moneda_y_forma_pago frmK2 = new Frm_Ventas_sustanciales_por_moneda_y_forma_pago();
+            frmK2.ShowDialog();
+        }
     }
 }

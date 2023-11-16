@@ -38,7 +38,8 @@
             this.nPrecioMin = new System.Windows.Forms.NumericUpDown();
             this.lblFechaDesde = new System.Windows.Forms.Label();
             this.lblFechaHasta = new System.Windows.Forms.Label();
-            this.btnGenerar = new System.Windows.Forms.Button();
+            this.btnMostrarReporte = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.gbPrecios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nPrecioMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nPrecioMin)).BeginInit();
@@ -47,10 +48,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(25, 138);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(685, 72);
+            this.label1.Size = new System.Drawing.Size(741, 68);
             this.label1.TabIndex = 5;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -58,10 +59,10 @@
             // lblDifPrecios
             // 
             this.lblDifPrecios.AutoSize = true;
-            this.lblDifPrecios.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDifPrecios.Font = new System.Drawing.Font("Rockwell", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDifPrecios.Location = new System.Drawing.Point(16, 54);
             this.lblDifPrecios.Name = "lblDifPrecios";
-            this.lblDifPrecios.Size = new System.Drawing.Size(694, 39);
+            this.lblDifPrecios.Size = new System.Drawing.Size(736, 39);
             this.lblDifPrecios.TabIndex = 4;
             this.lblDifPrecios.Text = "Informe de Movimientos de Compra y Venta";
             // 
@@ -146,22 +147,37 @@
             this.lblFechaHasta.TabIndex = 1;
             this.lblFechaHasta.Text = "Hasta:";
             // 
-            // btnGenerar
+            // btnMostrarReporte
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(627, 412);
-            this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(138, 26);
-            this.btnGenerar.TabIndex = 10;
-            this.btnGenerar.Text = "Generar Reporte";
-            this.btnGenerar.UseVisualStyleBackColor = true;
-            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
+            this.btnMostrarReporte.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnMostrarReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMostrarReporte.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMostrarReporte.Location = new System.Drawing.Point(644, 415);
+            this.btnMostrarReporte.Name = "btnMostrarReporte";
+            this.btnMostrarReporte.Size = new System.Drawing.Size(108, 23);
+            this.btnMostrarReporte.TabIndex = 13;
+            this.btnMostrarReporte.Text = "Mostrar Reporte";
+            this.btnMostrarReporte.UseVisualStyleBackColor = false;
+            this.btnMostrarReporte.Click += new System.EventHandler(this.btnMostrarReporte_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Tomato;
+            this.btnSalir.Location = new System.Drawing.Point(28, 415);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(108, 23);
+            this.btnSalir.TabIndex = 14;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Frm_Movimientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnGenerar);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnMostrarReporte);
             this.Controls.Add(this.gbPrecios);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDifPrecios);
@@ -187,6 +203,7 @@
         private System.Windows.Forms.NumericUpDown nPrecioMin;
         private System.Windows.Forms.Label lblFechaDesde;
         private System.Windows.Forms.Label lblFechaHasta;
-        private System.Windows.Forms.Button btnGenerar;
+        private System.Windows.Forms.Button btnMostrarReporte;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

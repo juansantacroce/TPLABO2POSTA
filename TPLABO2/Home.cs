@@ -52,5 +52,11 @@ namespace TPLABO2
             Frm_Ventas_sustanciales_por_moneda_y_forma_pago frmK2 = new Frm_Ventas_sustanciales_por_moneda_y_forma_pago();
             frmK2.ShowDialog();
         }
+
+        private void infoDeVentasPorFormaDePagoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Info_Ventas_Por_Forma_Pago  frmG = new Frm_Info_Ventas_Por_Forma_Pago();
+            frmG.ShowDialog();
+        }
     }
 }

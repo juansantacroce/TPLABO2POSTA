@@ -33,7 +33,6 @@
             this.txtAño = new System.Windows.Forms.TextBox();
             this.lblAño = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnMostrarReporte = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -85,15 +84,7 @@
             this.btnSalir.TabIndex = 11;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(354, 222);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(108, 23);
-            this.btnCancelar.TabIndex = 12;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnMostrarReporte
             // 
@@ -114,12 +105,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 270);
             this.Controls.Add(this.btnMostrarReporte);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblAño);
             this.Controls.Add(this.txtAño);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDifPrecios);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Frm_Diferencia_Precios";
             this.Text = "Frm_Diferencia_Precios";
             this.ResumeLayout(false);
@@ -134,7 +125,6 @@
         private System.Windows.Forms.TextBox txtAño;
         private System.Windows.Forms.Label lblAño;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnMostrarReporte;
     }
 }

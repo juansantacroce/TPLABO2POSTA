@@ -17,7 +17,7 @@ namespace TPLABO2
 
         public Helper()
         {
-            cadenaConexion = @"Data Source=DESKTOP-EEU1F57\SQLEXPRESS;Initial Catalog=TP_LABO_2;Integrated Security=True;Encrypt=False";
+            cadenaConexion = @"Data Source=JUANSANTACROCE\SQLEXPRESS;Initial Catalog=TP_LABO_2;Integrated Security=True";
             cnn = new SqlConnection(cadenaConexion);
             cmd = new SqlCommand();
         }

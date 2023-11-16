@@ -11,22 +11,23 @@ using TPLABO2.Reportes;
 
 namespace TPLABO2
 {
-    public partial class Frm_Diferencia_Precios : Form
+    public partial class Frm_Info_Ventas_Por_Forma_Pago : Form
     {
-        public Frm_Diferencia_Precios()
+        public Frm_Info_Ventas_Por_Forma_Pago()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
         private void btnMostrarReporte_Click(object sender, EventArgs e)
         {
-            Frm_Mostrar_Reporte_Diferencia_Precios mostrar = new Frm_Mostrar_Reporte_Diferencia_Precios();
-            mostrar.año = Convert.ToInt32(txtAño.Text);
+            Frm__Mostrar_Reporte_Info_Ventas_Forma_Pago mostrar = new Frm__Mostrar_Reporte_Info_Ventas_Forma_Pago();
+            mostrar.fechaDesde = dtpDesde.Value;
+            mostrar.fechaHasta = dtpHasta.Value;
             mostrar.ShowDialog();
         }
 

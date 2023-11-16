@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Este informe realiza una consulta para identificar ventas cuyo precio total
+ sea superior a la media, considerandouna moneda específica y una forma de pago 
+particular. La información devuelta incluye el nombre del cliente, 
+el precio total de la venta, la moneda utilizada, la forma de pago y el producto adquirido.</value>
+  </data>
 </root>

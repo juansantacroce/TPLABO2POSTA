@@ -20,10 +20,20 @@ namespace TPLABO2
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btnMostrarReporte_Click(object sender, EventArgs e)
+        {
             Frm_Mostrar_Movimientos frmMov = new Frm_Mostrar_Movimientos();
             frmMov.PrecioMin = nPrecioMin.Value;
             frmMov.PrecioMax = nPrecioMax.Value;
             frmMov.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

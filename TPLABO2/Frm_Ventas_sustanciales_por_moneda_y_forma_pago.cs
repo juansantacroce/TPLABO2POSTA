@@ -46,10 +46,20 @@ namespace TPLABO2
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btnMostrarReporte_Click(object sender, EventArgs e)
+        {
             Frm_Mostrar_Ventas_Moneda_Forma_Pago mostrar = new Frm_Mostrar_Ventas_Moneda_Forma_Pago();
             mostrar.moneda = cboMoneda.Text;
             mostrar.pago = cboFormaPago.Text;
             mostrar.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

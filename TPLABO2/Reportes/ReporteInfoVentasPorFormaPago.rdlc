@@ -20,9 +20,6 @@
             <TablixColumn>
               <Width>2.5cm</Width>
             </TablixColumn>
-            <TablixColumn>
-              <Width>2.5cm</Width>
-            </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
@@ -37,7 +34,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>PRODUCTO</Value>
+                              <Value>fecha</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -67,7 +64,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Rubro</Value>
+                              <Value>Forma de Pago</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -97,7 +94,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Marca</Value>
+                              <Value>Cantidad de Ventas</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -127,7 +124,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Depósito</Value>
+                              <Value>Total Ventas</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -157,7 +154,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Tipo</Value>
+                              <Value>Promedio Ventas</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -178,36 +175,6 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox11">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>CANTIDAD DE PRODUCTOS COMPRADOS</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox11</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
               </TablixCells>
             </TablixRow>
             <TablixRow>
@@ -215,21 +182,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="PRODUCTO">
+                    <Textbox Name="fecha">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!PRODUCTO.Value</Value>
+                              <Value>=Fields!fecha.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>PRODUCTO</rd:DefaultName>
+                      <rd:DefaultName>fecha</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -245,21 +212,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Rubro">
+                    <Textbox Name="Forma_de_Pago">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Rubro.Value</Value>
+                              <Value>=Fields!Forma_de_Pago.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Rubro</rd:DefaultName>
+                      <rd:DefaultName>Forma_de_Pago</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -275,21 +242,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Marca">
+                    <Textbox Name="Cantidad_de_Ventas">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Marca.Value</Value>
+                              <Value>=Fields!Cantidad_de_Ventas.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Marca</rd:DefaultName>
+                      <rd:DefaultName>Cantidad_de_Ventas</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -305,21 +272,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Depósito">
+                    <Textbox Name="Total_Ventas">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Depósito.Value</Value>
+                              <Value>=Fields!Total_Ventas.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Depósito</rd:DefaultName>
+                      <rd:DefaultName>Total_Ventas</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -335,51 +302,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Tipo">
+                    <Textbox Name="Promedio_Ventas">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Tipo.Value</Value>
+                              <Value>=Fields!Promedio_Ventas.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Tipo</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="CANTIDAD_DE_PRODUCTOS_COMPRADOS">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!CANTIDAD_DE_PRODUCTOS_COMPRADOS.Value</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>CANTIDAD_DE_PRODUCTOS_COMPRADOS</rd:DefaultName>
+                      <rd:DefaultName>Promedio_Ventas</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -404,7 +341,6 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
-            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -417,11 +353,11 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSetMateo2</DataSetName>
-        <Top>1.95474cm</Top>
-        <Left>1.05516cm</Left>
+        <DataSetName>DataSetGaston</DataSetName>
+        <Top>0.76412cm</Top>
+        <Left>1.92828cm</Left>
         <Height>1.2cm</Height>
-        <Width>15cm</Width>
+        <Width>12.5cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -443,7 +379,7 @@
           <Source>Embedded</Source>
           <Value>T1_logo</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0.55493cm</Top>
+          <Top>0.48437cm</Top>
           <Left>0.59594cm</Left>
           <Height>1.5cm</Height>
           <Width>1.5cm</Width>
@@ -477,7 +413,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>0.87243cm</Top>
+          <Top>0.80187cm</Top>
           <Left>2.27233cm</Left>
           <Height>1.1825cm</Height>
           <Width>2.5cm</Width>
@@ -511,7 +447,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox4</rd:DefaultName>
-          <Top>1.83417cm</Top>
+          <Top>1.76361cm</Top>
           <Left>10.39782cm</Left>
           <Height>0.6cm</Height>
           <Width>5.51625cm</Width>
@@ -545,7 +481,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>1.05778cm</Top>
+          <Top>0.98722cm</Top>
           <Left>10.39782cm</Left>
           <Height>0.6cm</Height>
           <Width>5.51625cm</Width>
@@ -587,8 +523,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
-          <Top>0.75833cm</Top>
-          <Left>12.86724cm</Left>
+          <Top>1.0757cm</Top>
+          <Left>12.72614cm</Left>
           <Height>1.02333cm</Height>
           <Width>3.18792cm</Width>
           <Style>
@@ -624,48 +560,44 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>649e2f96-c7df-4b15-be93-ce855e0b5091</rd:DataSourceID>
+      <rd:DataSourceID>a03909c4-d8d7-4981-97ad-defd93ac350d</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSetMateo2">
+    <DataSet Name="DataSetGaston">
       <Query>
         <DataSourceName>DataSetGeneral</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="PRODUCTO">
-          <DataField>PRODUCTO</DataField>
+        <Field Name="fecha">
+          <DataField>fecha</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Forma_de_Pago">
+          <DataField>Forma_de_Pago</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Rubro">
-          <DataField>Rubro</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Marca">
-          <DataField>Marca</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Depósito">
-          <DataField>Depósito</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Tipo">
-          <DataField>Tipo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CANTIDAD_DE_PRODUCTOS_COMPRADOS">
-          <DataField>CANTIDAD_DE_PRODUCTOS_COMPRADOS</DataField>
+        <Field Name="Cantidad_de_Ventas">
+          <DataField>Cantidad_de_Ventas</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Total_Ventas">
+          <DataField>Total_Ventas</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Promedio_Ventas">
+          <DataField>Promedio_Ventas</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSetGeneral</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Natalini\Desktop\Repos\TPLABO2POSTA\TPLABO2\DataSetGeneral.xsd</rd:SchemaPath>
-        <rd:TableName>sp_consulta113885_2</rd:TableName>
+        <rd:SchemaPath>C:\Users\juans\OneDrive\Escritorio\FACU\LABO 2\TP LABO POSTA\TPLABO2POSTA\TPLABO2\DataSetGeneral.xsd</rd:SchemaPath>
+        <rd:TableName>SP_INFORMACION_VENTAS_POR_FORMA_PAGO</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>sp_consulta113885_2TableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>SP_INFORMACION_VENTAS_POR_FORMA_PAGOTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -679,5 +611,5 @@ R4SX32O7L5EEeYRLfmUz4E2g9YsPjHZGHeXPvILM3DU2C4kkJvOVO/BnNNsM2QmnPxmNHDpAuOR+vLrJ
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>b24519b7-c877-4c34-a538-b43130205e64</rd:ReportID>
+  <rd:ReportID>43251512-dfc3-4584-b941-04c27ca02920</rd:ReportID>
 </Report>

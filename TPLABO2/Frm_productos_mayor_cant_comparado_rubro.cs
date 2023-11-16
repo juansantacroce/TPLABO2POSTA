@@ -38,7 +38,23 @@ namespace TPLABO2
             cboTipoProd.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
-        private void btnGenerar_Click(object sender, EventArgs e)
+        private void Frm_productos_mayor_cant_comparado_rubro_Load(object sender, EventArgs e)
+        {
+            cargarCombo();
+            cargarCombo2();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnGenerar_Click_1(object sender, EventArgs e)
         {
             Frm_Mostrar_Compras_Sustanciales_Prod_rub mostrar = new Frm_Mostrar_Compras_Sustanciales_Prod_rub();
             mostrar.almacen = cboDeposito.Text;
@@ -46,10 +62,9 @@ namespace TPLABO2
             mostrar.ShowDialog();
         }
 
-        private void Frm_productos_mayor_cant_comparado_rubro_Load(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-            cargarCombo();
-            cargarCombo2();
+            Close();
         }
     }
 }

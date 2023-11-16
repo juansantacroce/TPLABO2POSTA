@@ -328,7 +328,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -356,7 +355,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSetMateo1</DataSetName>
         <Top>1.21391cm</Top>
-        <Left>4.33599cm</Left>
+        <Left>1.82245cm</Left>
         <Height>1.2cm</Height>
         <Width>12.5cm</Width>
         <Style>
@@ -371,6 +370,180 @@
   </Body>
   <Width>6.62834in</Width>
   <Page>
+    <PageHeader>
+      <Height>2.54cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="Image1">
+          <Source>Embedded</Source>
+          <Value>T1_logo</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.33038cm</Top>
+          <Left>0.75893cm</Left>
+          <Height>1.5cm</Height>
+          <Width>1.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Insumos</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Informáticos</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <Top>0.64788cm</Top>
+          <Left>2.43532cm</Left>
+          <Height>1.1825cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox4">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Fecha y hora: </Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
+                  <Value>=Globals!ExecutionTime</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>1.60962cm</Top>
+          <Left>10.56081cm</Left>
+          <Height>0.6cm</Height>
+          <Width>5.51625cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox6">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Ejecutado por: </Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
+                  <Value>=User!UserID</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox6</rd:DefaultName>
+          <Top>0.83323cm</Top>
+          <Left>10.56081cm</Left>
+          <Height>0.6cm</Height>
+          <Width>5.51625cm</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>2.54cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox8">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!PageNumber</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox8</rd:DefaultName>
+          <Top>0.81125cm</Top>
+          <Left>12.88914cm</Left>
+          <Height>1.02333cm</Height>
+          <Width>3.18792cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
     <LeftMargin>2cm</LeftMargin>
@@ -428,6 +601,15 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="T1_logo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>9dc56bf7-68d8-4b87-b13d-bae17b3da6c7</rd:ReportID>
 </Report>
